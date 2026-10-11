@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Task Planner | Dana</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="planner.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">dana<span>.</span></a>
+      <div class="nav-links" style="display:flex">
+        <a href="index.html#projects">Back to portfolio</a>
+      </div>
+    </nav>
+  </header>
+  <main class="section container">
+    <p class="eyebrow">MINI PROJECT · HTML, CSS, JAVASCRIPT</p>
+    <h1 style="font-size:clamp(2.3rem,6vw,4rem)">Study Task Planner<span>.</span></h1>
+    <p class="hero-text">Add study tasks, mark them complete, or remove them. This mini app runs in your browser and does not send data anywhere.</p>
+    <section class="contact-form" aria-labelledby="planner-title" style="max-width:720px;margin-top:2rem">
+      <h2 id="planner-title">My tasks</h2>
+      <form id="task-form">
+        <div class="form-field">
+          <label for="task-input">New study task</label>
+          <input id="task-input" name="task" type="text" placeholder="e.g. Review marketing lecture" required maxlength="100">
+          <small class="field-error" id="task-error" aria-live="polite"></small>
+        </div>
+        <button class="button button-primary" type="submit">Add task +</button>
+      </form>
+      <p id="task-summary" class="contact-copy" aria-live="polite">0 tasks · 0 completed</p>
+      <ul id="task-list" style="list-style:none;padding:0;margin:0;display:grid;gap:.75rem"></ul>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html">dana<span>.</span></a><p>Mini project for SIS Assignment 1.</p><a class="back-top" href="index.html#projects">Back to projects ↑</a></div></footer>
+</body>
+</html>
